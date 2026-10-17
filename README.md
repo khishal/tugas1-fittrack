@@ -1,5 +1,7 @@
 # tugas1-fittrack
 
-Nama: Muhammad Khishal Ardana\n
-NPM: 250810701100070\n
-Kelas: Praktikum Pemrograman berorientasi objek A
+**Nama:** Muhammad Khishal Ardana
+
+**NPM:** 250810701100070
+
+**Kelas:** Praktikum Pemrograman Berorientasi Objek A
