@@ -1,6 +1,10 @@
 /**
  * Menyimpan data untuk Member gym fitrack
  */
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.ResolverStyle;
+import java.time.format.DateTimeParseException;
 
 public class Member{
     private String nama;
@@ -70,5 +74,24 @@ public class Member{
     */
     public String getJenisPaket(){
         return jenisPaket;
+    }
+    
+    /**
+     * Mengubah tanggal daftar jika tanggal valid.
+     *
+     * @param tanggalDaftar tanggal baru dengan format dd-MM-yyyy
+     */
+    public void setTanggalDaftar(String tanggalDaftar) {
+        DateTimeFormatter formatter =
+                DateTimeFormatter.ofPattern("dd-MM-uuuu")
+                        .withResolverStyle(ResolverStyle.STRICT);
+
+        try {
+            LocalDate.parse(tanggalDaftar, formatter);
+            this.tanggalDaftar = tanggalDaftar;
+        } catch (DateTimeParseException | NullPointerException e) {
+            System.out.println(
+                    "Tanggal tidak valid! Gunakan format dd-MM-yyyy.");
+        }
     }
 } 
