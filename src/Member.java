@@ -45,7 +45,7 @@ public class Member{
     }
 
     /**
-    * Mengubah Nomor Telepon jika input valid.x 
+    * Mengubah Nomor Telepon jika input valid.
     *
     * @param nomorHp nomor baru yang ingin disimpan
     */
@@ -94,4 +94,21 @@ public class Member{
                     "Tanggal tidak valid! Gunakan format dd-MM-yyyy.");
         }
     }
+    
+    /**
+     * Mengubah jenis paket jika input valid.
+     *
+     * @param jenisPaket jenis paket baru yang ingin disimpan
+     */
+    public void setJenisPaket(String jenisPaket) {
+        if ("Basic".equals(jenisPaket)
+        || "Premium".equals(jenisPaket)
+        || "VIP".equals(jenisPaket)) {
+            this.jenisPaket = jenisPaket;
+        } else {
+            System.out.println(
+                "Jenis paket tidak valid! Pilih Basic, Premium, atau VIP.");
+        }
+    }
+
 } 
