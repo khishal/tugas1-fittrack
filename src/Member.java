@@ -28,7 +28,7 @@ public class Member{
     */
 
     public void setNama(String namaBaru){
-        if (namaBaru != null && namaBaru.isBlank()){
+        if (namaBaru != null && !namaBaru.isBlank()){
             this.nama = namaBaru;
         }else {
             System.out.println("Nama tidak boleh kosong");
@@ -45,7 +45,7 @@ public class Member{
     }
 
     /**
-    * Mengubah Nomor Telepon jika input valid.
+    * Mengubah Nomor Telepon jika input valid.x 
     *
     * @param nomorHp nomor baru yang ingin disimpan
     */
