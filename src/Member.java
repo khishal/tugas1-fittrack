@@ -110,5 +110,5 @@ public class Member{
                 "Jenis paket tidak valid! Pilih Basic, Premium, atau VIP.");
         }
     }
-
+    
 } 
