@@ -110,5 +110,23 @@ public class Member{
                 "Jenis paket tidak valid! Pilih Basic, Premium, atau VIP.");
         }
     }
+
+    
+/**
+ * Membuat member baru dengan empat data.
+ *
+ * @param nama nama member
+ * @param noTelepon nomor telepon member
+ * @param tanggalDaftar tanggal pendaftaran member
+ * @param jenisPaket jenis paket keanggotaan
+ */
+public Member(String nama, String noTelepon,
+              String tanggalDaftar, String jenisPaket) {
+    setNama(nama);
+    setNoTelepon(noTelepon);
+    setTanggalDaftar(tanggalDaftar);
+    setJenisPaket(jenisPaket);
+}
+
     
 } 
