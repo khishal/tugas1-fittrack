@@ -112,21 +112,33 @@ public class Member{
     }
 
     
-/**
- * Membuat member baru dengan empat data.
- *
- * @param nama nama member
- * @param noTelepon nomor telepon member
- * @param tanggalDaftar tanggal pendaftaran member
- * @param jenisPaket jenis paket keanggotaan
- */
-public Member(String nama, String noTelepon,
-              String tanggalDaftar, String jenisPaket) {
-    setNama(nama);
-    setNoTelepon(noTelepon);
-    setTanggalDaftar(tanggalDaftar);
-    setJenisPaket(jenisPaket);
-}
+    /**
+     * Membuat member baru dengan empat data.
+     *
+     * @param nama nama member
+     * @param noTelepon nomor telepon member
+     * @param tanggalDaftar tanggal pendaftaran member
+     * @param jenisPaket jenis paket keanggotaan
+     */
+    public Member(String nama, String noTelepon,
+                String tanggalDaftar, String jenisPaket) {
+        setNama(nama);
+        setNoTelepon(noTelepon);
+        setTanggalDaftar(tanggalDaftar);
+        setJenisPaket(jenisPaket);
+    }
+
+
+    /**
+     * Membuat member baru dengan paket Basic secara default.
+     *
+     * @param nama nama member
+     * @param noTelepon nomor telepon member
+     * @param tanggalDaftar tanggal pendaftaran member
+     */
+    public Member(String nama, String noTelepon, String tanggalDaftar) {
+        this(nama, noTelepon, tanggalDaftar, "Basic");
+    }
 
     
 } 
