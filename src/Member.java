@@ -141,4 +141,19 @@ public class Member{
     }
 
     
+    /**
+     * Menampilkan seluruh data member dalam bentuk teks.
+     *
+     * @return data member berupa teks
+     */
+    @Override
+    public String toString() {
+        return "Member{" +
+                "nama='" + nama + '\'' +
+                ", noTelepon='" + noTelepon + '\'' +
+                ", tanggalDaftar='" + tanggalDaftar + '\'' +
+                ", jenisPaket='" + jenisPaket + '\'' +
+                '}';
+    }
+    
 } 
