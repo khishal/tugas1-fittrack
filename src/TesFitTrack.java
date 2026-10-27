@@ -22,9 +22,14 @@ public class TesFitTrack {
         Member member4 = new Member(
                 "Dina", "084567890123", "23-10-2026");
 
-        System.out.println(member1);
-        System.out.println(member2);
-        System.out.println(member3);
-        System.out.println(member4);
+
+        Member[] daftarMember = {
+            member1, member2, member3, member4
+        };
+
+        for (int i = 0; i < daftarMember.length; i++) {
+            System.out.println(daftarMember[i]);
+        }
+
     }
 }
