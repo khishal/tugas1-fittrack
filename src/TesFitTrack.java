@@ -22,7 +22,17 @@ public class TesFitTrack {
         Member member4 = new Member(
                 "Dina", "084567890123", "23-10-2026");
 
+        // Menguji setter dengan nomor telepon tidak valid.
+        System.out.println("Nomor sebelum diuji: " + member1.getNoTelepon());
 
+        member1.setNoTelepon("12345");
+
+        System.out.println("Nomor setelah diuji: " + member1.getNoTelepon());
+
+        //menguji dengan menambahkan member baru dengan nomor hp dan paket yang tidak valid
+        Member memberUji = new Member(
+                "Eko", "12345", "31-02-2026", "Gold");
+        
         Member[] daftarMember = {
             member1, member2, member3, member4
         };
