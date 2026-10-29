@@ -58,8 +58,8 @@ public class Member {
                 && nomorHp.matches("[0-9]+")) {
             this.noTelepon = nomorHp;
         } else {
-                System.out.println("Nomor telepon '" + nomorHp
-                + "' tidak valid! Harus diawali 0 dan minimal 10 digit.");
+            System.out.println("Nomor telepon '" + nomorHp
+            + "' tidak valid untuk member " + this.nama);
         }
     }
 
@@ -86,8 +86,8 @@ public class Member {
             LocalDate.parse(tanggalDaftar, formatter);
             this.tanggalDaftar = tanggalDaftar;
         } catch (DateTimeParseException | NullPointerException e) {
-            System.out.println("Tanggal '" + tanggalDaftar
-            + "' tidak valid! Gunakan format dd-MM-yyyy.");
+            System.out.println("Tanggal '"+ tanggalDaftar
+            + "' tidak valid! untuk member "+this.nama + ", Gunakan format dd-MM-yyyy.");
         }
     }
 
@@ -112,7 +112,7 @@ public class Member {
             this.jenisPaket = jenisPaket;
         } else {
             System.out.println("Jenis paket '" + jenisPaket
-            + "' tidak valid! Pilih Basic, Premium, atau VIP.");
+            + "' tidak valid! untuk member " +this.nama + ", Mohon Pilih Basic, Premium, atau VIP.");
         }
     }
 
