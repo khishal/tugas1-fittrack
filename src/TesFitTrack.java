@@ -34,7 +34,7 @@ public class TesFitTrack {
                 "Eko", "12345", "31-02-2026", "Gold");
         
         Member[] daftarMember = {
-            member1, member2, member3, member4
+            member1, member2, member3, member4, memberUji
         };
 
         for (int i = 0; i < daftarMember.length; i++) {
