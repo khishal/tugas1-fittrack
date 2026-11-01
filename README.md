@@ -35,6 +35,9 @@ tugas1-fittrack/
 ├── src/
 │   ├── Member.java
 │   └── TesFitTrack.java
+├── screenshot/
+│    ├── hasil-program.png
+│    └── hasil-validasi.png
 ├── .gitignore
 └── README.md
 ```
