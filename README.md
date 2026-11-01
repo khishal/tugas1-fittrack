@@ -1,5 +1,7 @@
 # Sistem Keanggotaan Gym FitTrack
-
+**Nama:** Muhammad Khishal Ardana  
+**NPM:** 250810701100070  
+**Kelas:** A **-** Praktikum Pemrograman Berorientasi Objek 
 ## Deskripsi
 
 FitTrack merupakan program sederhana berbasis Java untuk mengelola data keanggotaan gym. Program ini memungkinkan pengguna menyimpan data member berupa nama, nomor telepon, tanggal pendaftaran, dan jenis paket keanggotaan.
@@ -89,12 +91,11 @@ Screenshot berikut digunakan untuk menunjukkan hasil pengujian program.
 
 **1. Hasil Program dengan Data Member**
 
-Simpan screenshot hasil program yang menampilkan seluruh data member di folder `screenshots/` dengan nama `hasil-program.png`.
+![Hasil Program](screenshot/hasil-program.png)
 
 **2. Hasil Pengujian Validasi**
 
-Simpan screenshot yang memperlihatkan pesan penolakan ketika data tidak valid dan nilai default yang digunakan dengan nama `hasil-validasi.png`.
-
+![Hasil Validasi](screenshot/hasil-validasi.png)
 ## Keterbatasan dan Pengembangan
 
 Program FitTrack masih menggunakan penyimpanan data sementara melalui objek dan array. Data member belum disimpan ke database atau file sehingga data akan hilang ketika program dihentikan.
